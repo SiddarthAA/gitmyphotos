@@ -1,0 +1,24 @@
+# ── Runtime data (never commit) ───────────────────────────────────────────────
+data/
+
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+*.egg-info/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ── Node / Next.js ─────────────────────────────────────────────────────────────
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+
+# ── Editor / OS ────────────────────────────────────────────────────────────────
+.DS_Store
+.vscode/settings.json
+*.swp
+*.swo
