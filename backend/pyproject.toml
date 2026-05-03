@@ -1,0 +1,29 @@
+[project]
+name = "photovault-backend"
+version = "0.1.0"
+description = "PhotoVault backend — FastAPI + GitHub storage"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.32.0",
+    "python-multipart>=0.0.12",
+    "httpx>=0.28.0",
+    "PyGithub>=2.5.0",
+    "Pillow>=11.0.0",
+    "exifread>=3.0.0",
+    "python-dotenv>=1.0.1",
+    "pydantic>=2.10.0",
+    "pydantic-settings>=2.6.0",
+    "aiofiles>=24.1.0",
+    "nanoid>=2.0.0",
+]
+
+[dependency-groups]
+dev = []
+
+[tool.hatch.build.targets.wheel]
+packages = ["app"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
